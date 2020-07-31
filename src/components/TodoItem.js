@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import ProtoTypes from "prop-types";
 import Todos from "./Todos";
 
+
 export default class TodoItem extends Component {
   getStlyle = () => {
     return {
