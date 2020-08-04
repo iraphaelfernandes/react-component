@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import ProtoTypes from "prop-types";
+import PropTypes from "prop-types";
 import Todos from "./Todos";
 
 
@@ -37,10 +37,12 @@ export default class TodoItem extends Component {
     );
   }
 }
-
-TodoItem.ProtoTypes = {
-  todos: ProtoTypes.object.isRequired
-};
+//PropTypes
+TodoItem.propTypes = {
+  todos: PropTypes.object.isRequired,
+  markComplete: PropTypes.func.isRequired,
+  delTodo: PropTypes.func.isRequired,
+}
 
 const btnStyle = {
   background: '#ff00000',

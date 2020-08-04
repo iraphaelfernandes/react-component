@@ -16,6 +16,10 @@ class Todos extends Component {
 }
 Todos.ProtoTypes = {
   todos: ProtoTypes.array.isRequired,
+  markComplete: ProtoTypes.func.isRequired,
+  delTodo: ProtoTypes.func.isRequired,
 };
+
+
 
 export default Todos;
